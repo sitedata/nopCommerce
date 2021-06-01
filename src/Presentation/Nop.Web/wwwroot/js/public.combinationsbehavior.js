@@ -177,11 +177,9 @@
       var $value = $('[data-attr-value=' + valueId + ']', $contentEl);
       if (enabled) {
         $value.prop('disabled', false);
-        $('input', $value).prop('disabled', false);
         $value.removeClass('disabled');
       } else {
         $value.prop('disabled', true);
-        $('input', $value).prop('disabled', true);
         $value.addClass('disabled');
       }
     },
